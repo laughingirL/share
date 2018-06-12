@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
+  <title>Document</title> 
+  <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" /> 
+  <link rel="stylesheet" type="" href="assets/edit.css" /> 
+  <link rel="stylesheet" href="assets/main.css" /> 
+  <script src="JavaScript/edit.js">
+  </script> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <div class="row clearfix"> 
+    <div class="col-md-12 column"> 
+     <!--导航栏--> 
+     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="container"> 
+      <div class="navbar-header" id="header"> 
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+       <a class="navbar-brand" href="index.html"><h4>直流店</h4></a> 
+      </div> 
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+       <ul class="nav navbar-nav"> 
+        <li> <a href="index.html#selling">电子书</a></li> 
+        <li> <a href="index.html#searching">学习资源</a></li> 
+       </ul> 
+       <form class="navbar-form navbar-left" role="search" id="search_btn"> 
+        <div class="form-group">
+          搜索 
+         <input class="form-control" type="text" /> 
+        </div> 
+        <button type="submit" class="btn btn-default btn-xm"><a href="search.html">Go</a> </button> 
+       </form> 
+       <ul class="nav navbar-nav navbar-right"> 
+        <li> <a href="login.html">登录</a></li> 
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">我的信息 <strong class="caret"></strong></a> 
+         <ul class="dropdown-menu"> 
+          <li> <a href="sell.html">上传</a></li> 
+          <li> <a href="mystore.html">编辑</a></li> 
+         </ul> </li> 
+       </ul> 
+      </div> 
+     </nav> 
+     <br />
+     <br />
+     <br />
+     <br /> 
+     <div id="main" class="col-md-12"> 
+      <!--标签--> 
+      <div class="content-wrapper col-md-6"> 
+       <div class="btn-group" id="biaoqian"> 
+        <h3>请完善资源信息</h3>
+        <br /> 
+        <h3>  <button class="btn btn-warning" type="button"> 电子书</button> 
+              <button class="btn btn-warning" type="button"> 课件</button> 
+              <button class="btn btn-warning" type="button"> 笔记</button> 
+              <button class="btn btn-warning" type="button"> 试题</button> 
+        </h3> 
+       </div>
+       <br />
+       <br /> 
+       <!--基本信息--> 
+       <div> 
+        <form role="form"> 
+         <div class="form-group"> 
+          <label for="exampleInputEmail1">资源名称：</label> 
+          <input class="form-control" id="exampleInputEmail1" type="email" /> 
+         </div> 
+         <div class="form-group"> 
+            <label for="exampleInputEmail1">文件类型：</label> 
+            <input class="form-control" id="exampleInputEmail1" type="email" /> 
+           </div>
+         <div class="form-group"> 
+          <label for="exampleInputPassword1">大小&nbsp;<small><small>(&nbsp;以M计&nbsp)</small></small>：</label> 
+          <input class="form-control" id="exampleInputPassword1" type="password" /> 
+         </div> 
+         <div class="form-group"> 
+          <h5><b>资源描述：</b></h5>
+          <br /> 
+          <textarea class="form-control" rows="5"></textarea> 
+         </div> 
+        </form> 
+        <div style="margin :0px auto; width:990px;"> 
+         <input type="file" name="file" id="doc" multiple="multiple" style="width:150px;" onchange="javascript:setImagePreviews();" accept="image/*" /> 
+         <div id="dd" style=" width:990px;"></div> 
+        </div>
+        <br /> 
+        <div class="form-group" style="clear:both"> 
+         <label for="name">联系人：</label> 
+         <input type="text" class="form-control" placeholder="文本输入" />
+         <br /> 
+         <label for="name">联系方式：</label> 
+         <input type="text" class="form-control" placeholder="文本输入" />
+         <br /> 
+        </div> 
+        <div> 
+         <button type="submit" class="btn btn-primary">发布</button> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="panel panel-primary col-md-5 col-md-offset-1" id="readme"> 
+       <div class="panel-heading"> 
+        <h3 class="panel-title" align="center">声明</h3> 
+       </div> 
+       <div class="panel-body">
+        <br /> 1. 本站点是北京大学学生学习资源互助共享平台，不以盈利为目的。
+        <br />
+        <br /> 2. 凡持有北京大学学生证者皆可注册成为本站会员。本站点不对外校学生开放，特此声明。
+        <br />
+        <br /> 3. 上传文件需提交资源完整信息，已提交资源信息须由本站管理员进行审核，确认合格后方可发布。
+        <br />
+        <br /> 4. 凡本站注册会员皆可免费下载所有资源，未注册者注册后方可获得资源。
+        <br />
+        <br /> 5. 本平台禁止发布黄赌毒及盗版侵权相关资源，凡不符合社会主义核心价值观者不予发布。
+        <br />
+        <br /> 6. 所有资源皆上传自注册用户，如发现相关资源有盗版侵权问题，请联系管理员删除，本站点坚决维护版权所有者利益。
+        <br />
+        <br /> 7. 解释权归本站点所有。
+        <br />
+        <br />
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div style="height: 400px"></div> 
+  <!--采用container-fluid，使得整个页尾的宽度为100%，并设置它的背景色--> 
+  <div class="footer"> 
+      &copy;&nbsp;Zhiliu&nbsp;&nbsp;&nbsp;2017
+   <ul class=" pull-right"> 
+    <li><a href="about_us.html">关于我们</a> </li> 
+    <li><a href="link.html">联系我们</a></li> 
+    <li><a href="help.html">使用说明</a></li> 
+   </ul> 
+  </div> 
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> 
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+ </body>
+</html>
